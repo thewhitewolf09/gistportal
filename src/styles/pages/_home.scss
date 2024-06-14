@@ -187,7 +187,8 @@
   margin: 20px;
   padding: 20px;
   width: 80%;
-  background-color: $light-azure-blue;
+  // background-color: $light-azure-blue;
+  background: linear-gradient(to right, white, $cerulean-blue);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
