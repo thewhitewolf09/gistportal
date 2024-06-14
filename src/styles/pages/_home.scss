@@ -93,7 +93,7 @@
     position: relative;
     bottom: 5px;
     text-align: center;
-    height: 70px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,8 +131,8 @@
         .item {
           width: 100%;
           display: flex;
-          img{
-             width: 100%;
+          img {
+            width: 100%;
           }
         }
       }
@@ -171,6 +171,104 @@
         justify-content: center;
         font-size: 16px;
         padding-left: 20px;
+      }
+    }
+  }
+}
+
+//************************************ JOB Search Form **********************************************//
+//************************************ JOB Search Form **********************************************//
+//************************************ JOB Search Form **********************************************//
+
+.job-search-form {
+  position: relative;
+  bottom: 130px;
+  left: 80px;
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  background-color: $light-azure-blue;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+
+  .form-title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    margin: 0;
+    color: $deep-ocean-blue;
+  }
+
+  .form-holder-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+
+    .form-row {
+      width: 75%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .form-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+     
+
+        .form-control,
+        .fake-select {
+          width: 90%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+
+        .sub-title-note {
+          font-size: 12px;
+          color: #414040;
+        }
+      }
+    }
+
+    .form-btn-wrap {
+      width: 25%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        width: 80%;
+        padding: 10px 20px;
+        background-color: $deep-ocean-blue;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+
+      .more-filters-opener {
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $ocean-blue;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }

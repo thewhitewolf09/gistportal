@@ -88,12 +88,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="banner-bottom">
-        <p>
-          A world of opportunity awaits{" "}
-          <a href="https://forms.zohopublic.com/mail164/form/ApplyNow/formperma/YSxmWkET67tBqeTkG2V_V6HiKysynVKo_bsJErSNLhE">
-            Apply Now
-          </a>
-        </p>
+        
       </div>
     </div>
   );
