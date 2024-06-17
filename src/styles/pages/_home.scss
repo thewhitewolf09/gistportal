@@ -182,9 +182,9 @@
 
 .job-search-form {
   position: relative;
-  bottom: 130px;
-  left: 80px;
   margin: 20px;
+  margin-left: 10%;
+  margin-top: -140px;
   padding: 20px;
   width: 80%;
   // background-color: $light-azure-blue;
@@ -217,7 +217,6 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-     
 
         .form-control,
         .fake-select {
@@ -272,5 +271,97 @@
         }
       }
     }
+  }
+
+}
+
+
+//************************************ Latest Jobs  **********************************************//
+//************************************ Latest Jobs **********************************************//
+//************************************ Latest Jobs **********************************************//
+
+.jobs-container {
+  .jobs-section {
+      background-color: #fff;
+      padding: 40px 0;
+
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+
+          .horizontal-line{
+            border: 2px solid $dark-turquoise-blue;
+            width: 100px;
+            margin-bottom: 0;
+          }
+
+          .job-title {
+            margin-top: 0;
+              color: $ocean-blue;
+              font-size: 32px;
+              margin-bottom: 30px;
+              font-weight: 600;
+          }
+
+          .job-band {
+              box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+              padding: 20px 30px;
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              transition: transform 0.3s ease, box-shadow 0.8s ease;
+              border-top: 3px solid white;
+
+
+              &:hover {
+                  transform: translateY(-px);
+                  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+                  border-top: 3px solid $light-azure-blue;
+              }
+
+              .job-name,
+              .job-country,
+              .job-apply {
+                  color: $deep-ocean-blue;
+                  font-size: 18px;
+                  font-weight: 500;
+              }
+
+              .job-apply {
+                  a {
+                      background-color: $deep-ocean-blue;
+                      color: #fff;
+                      border-radius: 5px;
+                      padding: 10px 20px;
+                      text-decoration: none;
+                      transition: background-color 0.3s ease, transform 0.3s ease;
+
+                      &:hover {
+                          background-color: $dark-turquoise-blue;
+                          transform: translateY(-2px);
+                      }
+                  }
+              }
+          }
+
+          .check-btn {
+              display: inline-block;
+              padding: 15px 30px;
+              background-color: $light-azure-blue;
+              color: $deep-ocean-blue;
+              border-radius: 5px;
+              text-decoration: none;
+              font-weight: bold;
+              transition: background-color 0.3s ease, transform 0.3s ease;
+
+              &:hover {
+                  background-color: $cerulean-blue;
+                  color: #fff;
+                  transform: translateY(-2px);
+              }
+          }
+      }
   }
 }
